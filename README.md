@@ -1,4 +1,5 @@
 - [登录API](#登录API)
+- [文章获取API](#文章获取API)
 - [图集列表API](#图集列表API)
 - [查看图集详细API](#查看图集详细API)
 
@@ -207,3 +208,34 @@ picture_id | true | Int | 图集中的图片ID
   "msg":"服务器繁忙，请稍后重试"
 }
 ```
+
+# 获取分类API
+
+- 接口地址：http://localhost/api/sort
+- 返回格式：JSON
+- 请求方式：get/post
+- 请求示范：http://localhost/api/sort?status=picture
+
+### 请求参数说明：
+
+名称 | 必填 | 类型 | 说明
+--- | --- | --- | ---
+status | false | String | 查询图集分类使用"picture"
+
+### 成功返回值：
+
+```
+{
+  "result":"success",
+  "data": [
+    {
+      "id":1,
+      "sort_name":"默认分类",
+      "article_count":99,
+      "picture_count":99,
+    }
+  ]
+}
+```
+
+> 参数status = picture时，会返回picture_count字段。
