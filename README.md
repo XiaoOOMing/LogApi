@@ -101,3 +101,49 @@ keyword | false | String | 筛选项：关键字搜索，可不填
   "msg":"服务器繁忙，请稍后重试"
 }
 ```
+
+# 图片列表API
+
+- 接口地址：http://localhost/api/pictures
+- 返回格式：JSON
+- 请求方式：get/post
+- 请求示范：http://localhost/api/pictures?page=1&pagenum=10
+
+### 请求参数说明：
+
+名称 | 必填 | 类型 | 说明
+--- | --- | --- | ---
+page | true | Int | 当前页码
+pagenum | false | Int | 每页数量
+
+### 成功返回值：
+
+```
+{
+  "result":"success",
+  "data":[
+    {
+      "date":"今天",
+      "pictures": [
+        {
+          "id":1,
+          "url":"https://www.meckey.com/demo.png"
+        },
+        {
+          "id":2,
+          "url":"https://www.meckey.com/demo.png"
+        }
+      ]
+    }
+  ]
+}
+```
+
+### 失败返回值：
+
+```
+{
+  "result":"false",
+  "msg":"服务器繁忙，请稍后重试"
+}
+```
