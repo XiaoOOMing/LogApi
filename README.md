@@ -76,8 +76,8 @@ post_id | false | Int | 文章ID，当只需要一篇文章时使用
         "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1129051769,4107945695&fm=27&gp=0.jpg",
         "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2897931462,2821633511&fm=27&gp=0.jpg"
       ],
-      "created_at":"2019-02-15 10:32:59",
-      "updated_at":"2019-02-15 10:33:03",
+      "created_at":"2分钟前",
+      "real_time":"2019-02-15 10:32:59",
       "likes":[
         "张三","李四","王五"
       ],
