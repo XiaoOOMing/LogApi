@@ -17,8 +17,10 @@ passwd | true | String | 密码
 ```
 {
   "result":"success",
-  "uid":1,
+  "uid":123,
+  "real_name":"舒磊明",
   "avatar":"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4001431513,4128677135&fm=27&gp=0.jpg",
+  "group":"contributor",
   "msg":"登录成功"
 }
 ```
