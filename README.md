@@ -49,6 +49,7 @@ page | true | Int | 当前页码
 pagenum | false | Int | 每页文章数量，可不填。默认10
 sort_id | false | Int | 筛选项：分类ID，可不填
 keyword | false | String | 筛选项：关键字搜索，可不填
+post_id | false | Int | 文章ID，当只需要一篇文章时使用
 
 ### 成功返回值
 
