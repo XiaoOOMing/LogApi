@@ -11,3 +11,23 @@
 --- | --- | --- | ---
 username | true | String | 用户名
 passwd | true | String | 密码
+
+### 成功返回值
+
+```
+{
+  "result":"success",
+  "uid":1,
+  "avatar":"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4001431513,4128677135&fm=27&gp=0.jpg",
+  "msg":"登录成功"
+}
+```
+
+### 失败返回值
+
+```
+{
+  "result":"false",
+  "msg":"账号或密码错误"
+}
+```
