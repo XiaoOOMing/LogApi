@@ -8,5 +8,3 @@
 ### 请求参数说明：
 
 名称 | 必填 | 类型 | 说明
-username | true | String | 用户名
-passwd | true | String | 密码
