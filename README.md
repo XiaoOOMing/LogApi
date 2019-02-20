@@ -4,7 +4,7 @@
 - [评论API(完成)](#评论API)
 - [图集列表API](#图集列表API)
 - [查看图集详细API](#查看图集详细API)
-- [获取分类API](#获取分类API)
+- [获取分类API(完成)](#获取分类API)
 
 # 登录API
 
@@ -284,13 +284,7 @@ picture_id | true | Int | 图集中的图片ID
 - 接口地址：http://localhost/api/sort
 - 返回格式：JSON
 - 请求方式：get/post
-- 请求示范：http://localhost/api/sort?status=picture
-
-### 请求参数说明：
-
-名称 | 必填 | 类型 | 说明
---- | --- | --- | ---
-status | false | String | 查询图集分类使用"picture"
+- 请求示范：http://localhost/api/sort
 
 ### 成功返回值：
 
@@ -307,5 +301,3 @@ status | false | String | 查询图集分类使用"picture"
   ]
 }
 ```
-
-> 参数status = picture时，会返回picture_count字段。
