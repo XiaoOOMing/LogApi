@@ -1,5 +1,6 @@
 - [登录API（完成）](#登录API)
 - [文章获取API（完成）](#文章获取API)
+- [点赞API(完成)](#点赞API)
 - [图集列表API](#图集列表API)
 - [查看图集详细API](#查看图集详细API)
 - [获取分类API](#获取分类API)
@@ -106,6 +107,34 @@ post_id | false | Int | 文章ID，当只需要一篇文章时使用
 {
   "result":"false",
   "msg":"服务器繁忙，请稍后重试"
+}
+```
+
+# 点赞API
+
+- 接口地址：http://localhost/api/support
+- 返回格式：JSON
+- 请求方式：get/post
+- 请求示范：http://localhost/api/support?id=1&uid=1
+
+### 请求参数说明：
+
+名称 | 必填 | 类型 | 说明
+--- | --- | --- | ---
+id | true | Int | 工作圈ID
+uid | true | Int | 用户ID
+
+### 成功返回值：
+
+```
+// 点赞返回值
+{
+  "result":"success",
+  "status":2,
+  "msg":"点赞成功",
+  "likeList":[
+    "Alice","Bob","Mike"
+  ]
 }
 ```
 
