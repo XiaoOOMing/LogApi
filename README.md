@@ -138,6 +138,45 @@ uid | true | Int | 用户ID
 }
 ```
 
+# 评论API
+
+- 接口地址：http://localhost/api/comment
+- 返回格式：JSON
+- 请求方式：get/post
+- 请求示范：http://localhost/api/comment?id=1&uid=1&content=HelloWorld&parent=0
+
+### 请求参数说明：
+
+名称 | 必填 | 类型 | 说明
+--- | --- | --- | ---
+id | true | Int | 工作圈ID
+uid | true | Int | 评论用户ID
+content | true | String | 评论内容
+parent | true | Int | 与评论ID关联。0为顶级评论，否则为回复评论
+
+### 成功返回值:
+
+```
+{
+  "result":"success",
+  "msg":"评论成功",
+   "comments":[
+      {
+        "id":1,
+        "username":"张三",
+        "content":"Hello world",
+        "parent": 0
+      },
+      {
+        "id":2,
+        "username":"李四",
+        "content":"你好世界",
+        "parent": 1
+      },
+    ]
+}
+```
+
 # 图集列表API
 
 - 接口地址：http://localhost/api/pictures
