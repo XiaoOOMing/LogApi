@@ -183,7 +183,7 @@ parent | true | Int | 与评论ID关联。0为顶级评论，否则为回复评�
 - 接口地址：http://localhost/api/pictures
 - 返回格式：JSON
 - 请求方式：get/post
-- 请求示范：http://localhost/api/pictures?page=1&pagenum=10
+- 请求示范：http://localhost/api/pictures?page=1&pagenum=10&sort_id=1
 
 ### 请求参数说明：
 
@@ -191,6 +191,7 @@ parent | true | Int | 与评论ID关联。0为顶级评论，否则为回复评�
 --- | --- | --- | ---
 page | true | Int | 当前页码
 pagenum | false | Int | 每页数量，默认为10.（注意：10条数据 = 10天的数据，不要理解为10张图片）
+sort_id | false | Int | 筛选分类ID
 
 ### 成功返回值：
 
