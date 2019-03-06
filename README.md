@@ -6,6 +6,7 @@
 - [查看图集详细API](#查看图集详细API)
 - [获取分类API(完成)](#获取分类API)
 - [图片上传(完成)](#图片上传)
+- [发送工作圈(完成)](#发送工作圈)
 
 # 登录API
 
@@ -328,3 +329,17 @@ picture_id | true | Int | 图集中的图片ID
   ]
 }
 ```
+
+# 发送工作圈
+
+- 接口地址：http://localhost/api/send
+- 返回格式：JSON
+- 请求方式：post
+
+名称 | 必填 | 类型 | 说明
+--- | --- | --- | ---
+uid | true | Int | 作者ID
+content| true | String | 内容
+sort_id | true | Int | 分类ID
+pictures | true | Json | 图片地址: ["test1.jpg", "test2.mp4" ...]
+
