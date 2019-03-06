@@ -7,6 +7,7 @@
 - [获取分类API(完成)](#获取分类API)
 - [图片上传(完成)](#图片上传)
 - [发送工作圈(完成)](#发送工作圈)
+- [我发送的列表(完成)](#我发送的列表)
 
 # 登录API
 
@@ -207,11 +208,11 @@ sort_id | false | Int | 筛选分类ID
       "pictures": [
         {
           "id":1,
-          "url":"https://www.meckey.com/demo.png"
+          "url":"https://localhost/demo.png"
         },
         {
           "id":2,
-          "url":"https://www.meckey.com/demo.png"
+          "url":"https://localhost/demo.png"
         }
       ]
     }
@@ -254,7 +255,7 @@ picture_id | true | Int | 图集中的图片ID
       "pictures": [
         {
           "post_id":1,
-          "url":"https://www.meckey.com/demo.png",
+          "url":"http://localhost/demo.png",
           "author":"舒磊明",
           "sort_name":"默认分类",
           "content":"我是文字内容",
@@ -262,7 +263,7 @@ picture_id | true | Int | 图集中的图片ID
         },
         {
           "post_id":2,
-          "url":"https://www.meckey.com/demo.png",
+          "url":"http://localhost/demo.png",
           "author":"舒磊明",
           "sort_name":"默认分类",
           "content":"我是文字内容",
@@ -324,8 +325,8 @@ picture_id | true | Int | 图集中的图片ID
 {
   "result": "success",
   "filename": [
-    "http://note.meckey.com/uploads/20190306/09013414b7367a28377d4d513a4d3349861d2f.jpg",
-    "http://note.meckey.com/uploads/20190306/0901342377f9eb902f3c5855aca19197689b14.mp4"
+    "http://localhost/uploads/20190306/09013414b7367a28377d4d513a4d3349861d2f.jpg",
+    "http://localhost/uploads/20190306/0901342377f9eb902f3c5855aca19197689b14.mp4"
   ]
 }
 ```
@@ -343,3 +344,29 @@ content| true | String | 内容
 sort_id | true | Int | 分类ID
 pictures | true | Json | 图片地址: ["test1.jpg", "test2.mp4" ...]
 
+# 我发送的列表
+
+- 接口地址：http://localhost/api/send
+- 返回格式：JSON
+- 请求方式：post/get
+
+名称 | 必填 | 类型 | 说明
+--- | --- | --- | ---
+uid | true | Int | 作者ID
+
+### 返回值：
+
+```
+[
+  {
+    "sort_id": 1,
+    "name": "缅甸100吨",
+    "number": 10
+  },
+  {
+    "sort_id": 2,
+    "name": "巴西200吨",
+    "number": 14
+  }
+]
+```
