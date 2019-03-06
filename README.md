@@ -240,7 +240,7 @@ sort_id | false | Int | 筛选分类ID
 }
 ```
 
-# 查看图集详细API
+# 查看图集详细API（废弃）
 
 - 接口地址：http://localhost/api/pictures
 - 返回格式：JSON
