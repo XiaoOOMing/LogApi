@@ -132,7 +132,7 @@ uid | true | Int | 用户ID
 // 点赞返回值
 {
   "result":"success",
-  "status":2,
+  "status":2, // status = 1为取消点赞
   "msg":"点赞成功",
   "likeList":[
     "Alice","Bob","Mike"
