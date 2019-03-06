@@ -8,6 +8,7 @@
 - [图片上传(完成)](#图片上传)
 - [发送工作圈(完成)](#发送工作圈)
 - [我发送的列表(完成)](#我发送的列表)
+- [修改用户信息(完成)](#修改用户信息)
 
 # 登录API
 
@@ -370,3 +371,27 @@ uid | true | Int | 作者ID
   }
 ]
 ```
+
+# 修改用户信息
+
+- 接口地址：http://localhost/api/change_user_profile
+- 返回格式：JSON
+- 请求方式：post/get
+
+名称 | 必填 | 类型 | 说明
+--- | --- | --- | ---
+uid | true | Int | 用户ID
+avatar | false | String | 头像地址
+username | false | String | 新名字
+
+说明 avatar 和 username 任选其一。
+
+### 返回值：
+
+```
+{
+  "result" => "success",
+  "msg" => "修改成功"
+}
+```
+
