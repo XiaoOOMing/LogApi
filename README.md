@@ -3,7 +3,7 @@
 - [点赞API(完成)](#点赞API)
 - [评论API(完成)](#评论API)
 - [图集列表API)(修改中)](#图集列表API)
-- [查看图集详细API(修改中)](#查看图集详细API)
+- [查看图集详细API(废弃)](#查看图集详细API)
 - [获取分类API(完成)](#获取分类API)
 - [图片上传(完成)](#图片上传)
 - [发送工作圈(完成)](#发送工作圈)
@@ -208,12 +208,22 @@ sort_id | false | Int | 筛选分类ID
       "date":"今天",
       "pictures": [
         {
-          "id":1,
-          "url":"https://localhost/demo.png"
+          "id":"124",
+          "post_id":"36",
+          "url":"http://note.meckey.com/uploads/20190306/0901342377f9eb902f3c5855aca19197689b14.mp4",
+          "author":"管理员",
+          "content":"3E1864ac",
+          "created_at":"1551834097",
+          "sort_name":"默认分类"
         },
         {
-          "id":2,
-          "url":"https://localhost/demo.png"
+          "id":"123",
+          "post_id":"36",
+          "url":"http://note.meckey.com/uploads/20190306/09013414b7367a28377d4d513a4d3349861d2f.jpg",
+          "author":"管理员",
+          "content":"3E1864ac",
+          "created_at":"1551834097",
+          "sort_name":"默认分类"
         }
       ]
     }
