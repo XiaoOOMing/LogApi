@@ -5,6 +5,7 @@
 - [图集列表API](#图集列表API)
 - [查看图集详细API](#查看图集详细API)
 - [获取分类API(完成)](#获取分类API)
+- [图片上传(完成)](#图片上传)
 
 # 登录API
 
@@ -300,6 +301,30 @@ picture_id | true | Int | 图集中的图片ID
       "article_count":99,
       "picture_count":99,
     }
+  ]
+}
+```
+
+# 图片上传
+
+- 接口地址：http://localhost/api/uploadImage
+- 返回格式：JSON
+- 请求方式：post
+
+### 说明
+
+- 图片后缀.jpg 视频后缀.mp4
+- 图片名称： xxx.jpg 缩略图名称：xxx_thumb.jpg
+- 视频名称：xxx.mp4 截图名称：xxx.mp4.jpg
+
+### 成功返回值：
+
+```
+{
+  "result": "success",
+  "filename": [
+    "http://note.meckey.com/uploads/20190306/09013414b7367a28377d4d513a4d3349861d2f.jpg",
+    "http://note.meckey.com/uploads/20190306/0901342377f9eb902f3c5855aca19197689b14.mp4"
   ]
 }
 ```
