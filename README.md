@@ -210,7 +210,7 @@ sort_id | false | Int | 筛选分类ID
         {
           "id":"124",
           "post_id":"36",
-          "url":"http://note.meckey.com/uploads/20190306/0901342377f9eb902f3c5855aca19197689b14.mp4",
+          "url":"http://localhost/uploads/20190306/0901342377f9eb902f3c5855aca19197689b14.mp4",
           "author":"管理员",
           "content":"3E1864ac",
           "created_at":"1551834097",
@@ -219,7 +219,7 @@ sort_id | false | Int | 筛选分类ID
         {
           "id":"123",
           "post_id":"36",
-          "url":"http://note.meckey.com/uploads/20190306/09013414b7367a28377d4d513a4d3349861d2f.jpg",
+          "url":"http://localhost/uploads/20190306/09013414b7367a28377d4d513a4d3349861d2f.jpg",
           "author":"管理员",
           "content":"3E1864ac",
           "created_at":"1551834097",
