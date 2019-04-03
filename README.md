@@ -94,13 +94,15 @@ uid | false | Int | 用户ID，筛选指定用户文章
           "id":1,
           "username":"张三",
           "content":"Hello world",
-          "parent": 0
+          "parent": 0,
+          "uid": 1, (张三的ID)
         },
         {
           "id":2,
           "username":"李四",
           "content":"你好世界",
-          "parent": 1
+          "parent": 1,
+          "uid": 2, (李四的ID)
         },
       ],
       "can_delete": Int(0)不能删除了 或者 Int(1) 两小时之内可删除
