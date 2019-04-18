@@ -363,7 +363,7 @@ pictures | true | Json | 图片地址: ["test1.jpg", "test2.mp4" ...]
 
 # 我发送的列表
 
-- 接口地址：http://localhost/api/send
+- 接口地址：http://localhost/api/my_posts
 - 返回格式：JSON
 - 请求方式：post/get
 
