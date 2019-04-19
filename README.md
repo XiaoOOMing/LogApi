@@ -319,6 +319,7 @@ picture_id | true | Int | 图集中的图片ID
       "sort_name":"默认分类",
       "article_count":99,
       "picture_count":99,
+      "sort_json":"["国家","客户","产量","产品"]"
     }
   ]
 }
