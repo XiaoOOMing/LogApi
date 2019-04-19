@@ -462,6 +462,10 @@ sort_json | true | JSON | ["国家","客户名","产量","产品"]
 
 # 重命名分类
 
+- 接口地址: http://localhost/api/rename_sort
+- 返回格式: json
+- 请求方式: post/get
+
 名称 | 必填 | 类型 | 说明
 --- | --- | --- | ---
 sort_name | true | String | 分类名称
