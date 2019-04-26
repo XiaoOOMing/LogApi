@@ -12,6 +12,7 @@
 - [删除工作圈(完成)](#删除工作圈)
 - [新建分类(管理员专用)](#新建分类)
 - [重命名分类(管理员专用)](#重命名分类)
+- [新用户注册](#新用户注册)
 
 # 登录API
 
@@ -482,5 +483,30 @@ sort_id | true | Int | ID
 {
   "result" => "false",
   "msg" => "请输入分类名称"
+}
+```
+
+#新用户注册
+
+- 接口地址: http://localhost/api/regist
+- 返回格式: json
+- 请求方式: post/get
+
+名称 | 必填 | 类型 | 说明
+--- | --- | --- | ---
+account | true | String | 账号
+passwd | true | String | 密码
+orz | true | String | 公司/组织
+
+### 返回值
+
+```
+{
+  "result" => "success",
+  "msg" => “恭喜注册成功，点击确认自动登录”
+}
+{
+  "result" => "false",
+  "msg" => “账号已存在”
 }
 ```
