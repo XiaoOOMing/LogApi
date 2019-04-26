@@ -486,7 +486,7 @@ sort_id | true | Int | ID
 }
 ```
 
-#新用户注册
+# 新用户注册
 
 - 接口地址: http://localhost/api/regist
 - 返回格式: json
